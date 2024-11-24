@@ -1,0 +1,64 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pdb
+*.egg
+*.eggs
+*.manifest
+*.spec
+dist/
+build/
+*.db
+*.sqlite3
+*.log
+
+# Virtual environments
+venv/
+env/
+.venv/
+.ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# PyInstaller
+*.manifest
+*.spec
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# Docker
+*.log
+*.pid
+*.swp
+*.bak
+*.tar
+*.tar.gz
+*.tgz
+
+# FastAPI specific
+*.sqlite
+*.db
+__pycache__/
+
+# RDKit
+rdkit_cffi.*.so
+rdkit_cffi.*.dylib
+rdkit_cffi.*.dll

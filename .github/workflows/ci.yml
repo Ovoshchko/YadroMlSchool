@@ -18,13 +18,13 @@ jobs:
 
     - name: Install dependencies
       run: |
+        pwd 
+        ls -R
         python -m pip install --upgrade pip
         pip install -r Python/Project/src/requirements.txt
 
     - name: Run tests
       run: |
-        pwd 
-        ls -R
         python -m unittest discover -s Python/Project/src/tests -p "*.py"
   static_analysis:
     runs-on: ubuntu-latest

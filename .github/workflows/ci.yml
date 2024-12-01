@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - '**'
+      - '!master'
+      - '!main'
 
 jobs:
   test:
@@ -17,11 +19,11 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install -r ./Python/Project/src/requirements.txt
 
     - name: Run tests
       run: |
-        python -m unittest discover -s tests -p "*.py"
+        python -m unittest discover -s ./Python/Project/src/tests -p "*.py"
   static_analysis:
     runs-on: ubuntu-latest
 

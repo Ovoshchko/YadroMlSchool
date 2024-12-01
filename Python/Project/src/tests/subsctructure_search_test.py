@@ -1,6 +1,7 @@
 import unittest
 from src.molecular.rdkit_functions import substructure_search
 
+
 class TestSubstructureSearch(unittest.TestCase):
     def test_valid_substructure(self):
         molecules = ["CCO", "CCC", "CC(C)O"]
@@ -43,4 +44,3 @@ class TestSubstructureSearch(unittest.TestCase):
         substructure = "C"
         result = substructure_search(molecules, substructure)
         self.assertEqual(result, ["C", "CC", "CCC", "CCCC"])
-

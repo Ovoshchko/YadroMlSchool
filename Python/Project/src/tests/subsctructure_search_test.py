@@ -1,6 +1,5 @@
 import unittest
-from src.molecular.rdkit_functions import substructure_search
-
+from molecular import substructure_search
 
 class TestSubstructureSearch(unittest.TestCase):
     def test_valid_substructure(self):

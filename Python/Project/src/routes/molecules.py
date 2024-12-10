@@ -1,8 +1,8 @@
 from os import getenv
 
 from fastapi import APIRouter, HTTPException
-from models import Molecule
-from services import MoleculeService
+from src.models import Molecule
+from src.services import MoleculeService
 
 molecule_router = APIRouter()
 molecule_service = MoleculeService()

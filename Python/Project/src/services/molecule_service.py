@@ -1,9 +1,9 @@
 from typing import List
 from rdkit import Chem
-from src.molecular import substructure_search
-from src.models import Molecule as Mol
+from src.molecular.rdkit_functions import substructure_search
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.orm import sessionmaker, declarative_base
+
 
 DATABASE_URL = "postgresql://user:password@localhost/db"
 
@@ -14,6 +14,7 @@ class Molecule(Base):
     id = Column(Integer, primary_key=True)
     identifier = Column(String, unique=True)
     smiles = Column(String)
+
 
 class MoleculeService:
     def __init__(self):

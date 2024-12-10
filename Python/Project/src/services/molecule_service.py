@@ -9,6 +9,7 @@ DATABASE_URL = "postgresql://user:password@localhost/db"
 
 Base = declarative_base()
 
+
 class Molecule(Base):
     __tablename__ = 'molecules'
     id = Column(Integer, primary_key=True)

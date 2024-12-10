@@ -27,7 +27,8 @@ jobs:
 
     - name: Run tests
       run: |
-        python -m unittest discover -s Python/Project/src/tests -p "*.py"
+        cd Python/Project
+        python -m unittest discover -s src/tests -p "*.py"
 
   static_analysis:
     runs-on: ubuntu-latest

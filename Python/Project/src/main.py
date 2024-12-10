@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routes import molecule_router
+from .routes import molecule_router
 
 app = FastAPI()
 

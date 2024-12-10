@@ -1,5 +1,6 @@
 import unittest
-from molecular import substructure_search
+from src.molecular import substructure_search
+
 
 class TestSubstructureSearch(unittest.TestCase):
     def test_valid_substructure(self):

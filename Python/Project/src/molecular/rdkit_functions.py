@@ -1,5 +1,6 @@
 from rdkit import Chem
 
+
 def substructure_search(molecules, substructure):
     substructure_mol = Chem.MolFromSmiles(substructure)
 
@@ -17,4 +18,3 @@ def substructure_search(molecules, substructure):
             matching_molecules.append(smiles)
 
     return matching_molecules
-
